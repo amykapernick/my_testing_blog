@@ -1,1 +1,640 @@
-[{"documentTitle":"My Testing Blog","pageUrl":"http://localhost:65519/","issues":[{"code":"WCAG2AA.Principle3.Guideline3_1.3_1_1.H57.2","type":"error","typeCode":1,"message":"The html element should have a lang or xml:lang attribute which describes the language of the document.","context":"<html><head>\n\t\t<meta charset=\"utf-8\">...</html>","selector":"html","runner":"htmlcs","runnerExtras":{}}]}]
+[
+	{
+		"documentTitle": "My Testing Blog",
+		"pageUrl": "http://localhost:65519/",
+		"issues": [
+			{
+				"code": "WCAG2AAA.Principle3.Guideline3_1.3_1_1.H57.2",
+				"type": "error",
+				"typeCode": 1,
+				"message": "The html element should have a lang or xml:lang attribute which describes the language of the document.",
+				"context": "<html><head>\n\t\t<meta charset=\"utf-8\">...</html>",
+				"selector": "html",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<h1 class=\"site-title\">My Testing Blog</h1>",
+				"selector": "html > body > header > a > h1",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<a href=\"12-days-of-front-end-testing\">12 Days of Front End Testing</a>",
+				"selector": "html > body > main > article:nth-child(1) > h2 > a",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<time datetime=\"2019-12-02\">02 Dec 19</time>",
+				"selector": "html > body > main > article:nth-child(1) > time",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<p>Anyone who's spoken to me at so...</p>",
+				"selector": "html > body > main > article:nth-child(1) > div > p",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<a href=\"setting-up-a-windows-computer-for-dev\">Setting up a Windows Computer f...</a>",
+				"selector": "html > body > main > article:nth-child(2) > h2 > a",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<time datetime=\"2019-11-05\">05 Nov 19</time>",
+				"selector": "html > body > main > article:nth-child(2) > time",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<p>In the past, Windows has develo...</p>",
+				"selector": "html > body > main > article:nth-child(2) > div > p",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<a href=\"html-and-css-tricks\">HTML and CSS Tricks</a>",
+				"selector": "html > body > main > article:nth-child(3) > h2 > a",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<time datetime=\"2019-08-22\">22 Aug 19</time>",
+				"selector": "html > body > main > article:nth-child(3) > time",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<p>So recently I shared a HTML and...</p>",
+				"selector": "html > body > main > article:nth-child(3) > div > p:nth-child(1)",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<p>![](https://media.giphy.com/med...</p>",
+				"selector": "html > body > main > article:nth-child(3) > div > p:nth-child(2)",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<a href=\"how-notion-runs-my-life\">How Notion runs my life</a>",
+				"selector": "html > body > main > article:nth-child(4) > h2 > a",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<time datetime=\"2019-03-23\">23 Mar 19</time>",
+				"selector": "html > body > main > article:nth-child(4) > time",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<p>During the past year, I've star...</p>",
+				"selector": "html > body > main > article:nth-child(4) > div > p",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<a href=\"https://www.notion.so/?r=b06033c2cb2d4fe2b29bc7c5ca4a1756\">Notion</a>",
+				"selector": "html > body > main > article:nth-child(4) > div > p > a",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<a href=\"the-comedy-of-errors\">The Comedy of Errors</a>",
+				"selector": "html > body > main > article:nth-child(5) > h2 > a",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<time datetime=\"2018-04-19\">19 Apr 18</time>",
+				"selector": "html > body > main > article:nth-child(5) > time",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<p>I'd like to thank Microsoft for...</p>",
+				"selector": "html > body > main > article:nth-child(5) > div > p",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<a href=\"https://codepen.io/aimhigherwebdesign-amy/\" target=\"_blank\" class=\"social-link codepen\">\n\t\t\t\t\tCodepen\n\t\t\t\t</a>",
+				"selector": "html > body > footer > nav > a:nth-child(1)",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<a href=\"https://github.com/amykapernick/amygoestoperth\" target=\"_blank\" class=\"social-link github\"> Github </a>",
+				"selector": "html > body > footer > nav > a:nth-child(2)",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<a href=\"https://www.facebook.com/aimhigherwebdesign\" target=\"_blank\" class=\"social-link facebook\">\n\t\t\t\t\tFacebook\n\t\t\t\t</a>",
+				"selector": "html > body > footer > nav > a:nth-child(3)",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<a href=\"https://twitter.com/amys_kapers\" target=\"_blank\" class=\"social-link twitter\">\n\t\t\t\t\tTwitter\n\t\t\t\t</a>",
+				"selector": "html > body > footer > nav > a:nth-child(4)",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<a href=\"https://www.instagram.com/amys_kapers/\" target=\"_blank\" class=\"social-link instagram\">\n\t\t\t\t\tInstagram\n\t\t\t\t</a>",
+				"selector": "html > body > footer > nav > a:nth-child(5)",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<a href=\"https://aimhigherwebdesign.com.au\" target=\"_blank\" class=\"social-link website\">Website</a>",
+				"selector": "html > body > footer > nav > a:nth-child(6)",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			}
+		]
+	},
+	{
+		"documentTitle": "My Testing Blog",
+		"pageUrl": "http://localhost:65519/",
+		"issues": [
+			{
+				"code": "WCAG2AAA.Principle3.Guideline3_1.3_1_1.H57.2",
+				"type": "error",
+				"typeCode": 1,
+				"message": "The html element should have a lang or xml:lang attribute which describes the language of the document.",
+				"context": "<html><head>\n\t\t<meta charset=\"utf-8\">...</html>",
+				"selector": "html",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<h1 class=\"site-title\">My Testing Blog</h1>",
+				"selector": "html > body > header > a > h1",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<a href=\"12-days-of-front-end-testing\">12 Days of Front End Testing</a>",
+				"selector": "html > body > main > article:nth-child(1) > h2 > a",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<time datetime=\"2019-12-02\">02 Dec 19</time>",
+				"selector": "html > body > main > article:nth-child(1) > time",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<p>Anyone who's spoken to me at so...</p>",
+				"selector": "html > body > main > article:nth-child(1) > div > p",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<a href=\"setting-up-a-windows-computer-for-dev\">Setting up a Windows Computer f...</a>",
+				"selector": "html > body > main > article:nth-child(2) > h2 > a",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<time datetime=\"2019-11-05\">05 Nov 19</time>",
+				"selector": "html > body > main > article:nth-child(2) > time",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<p>In the past, Windows has develo...</p>",
+				"selector": "html > body > main > article:nth-child(2) > div > p",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<a href=\"html-and-css-tricks\">HTML and CSS Tricks</a>",
+				"selector": "html > body > main > article:nth-child(3) > h2 > a",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<time datetime=\"2019-08-22\">22 Aug 19</time>",
+				"selector": "html > body > main > article:nth-child(3) > time",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<p>So recently I shared a HTML and...</p>",
+				"selector": "html > body > main > article:nth-child(3) > div > p:nth-child(1)",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<p>![](https://media.giphy.com/med...</p>",
+				"selector": "html > body > main > article:nth-child(3) > div > p:nth-child(2)",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<a href=\"how-notion-runs-my-life\">How Notion runs my life</a>",
+				"selector": "html > body > main > article:nth-child(4) > h2 > a",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<time datetime=\"2019-03-23\">23 Mar 19</time>",
+				"selector": "html > body > main > article:nth-child(4) > time",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<p>During the past year, I've star...</p>",
+				"selector": "html > body > main > article:nth-child(4) > div > p",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<a href=\"https://www.notion.so/?r=b06033c2cb2d4fe2b29bc7c5ca4a1756\">Notion</a>",
+				"selector": "html > body > main > article:nth-child(4) > div > p > a",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<a href=\"the-comedy-of-errors\">The Comedy of Errors</a>",
+				"selector": "html > body > main > article:nth-child(5) > h2 > a",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<time datetime=\"2018-04-19\">19 Apr 18</time>",
+				"selector": "html > body > main > article:nth-child(5) > time",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<p>I'd like to thank Microsoft for...</p>",
+				"selector": "html > body > main > article:nth-child(5) > div > p",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<a href=\"https://codepen.io/aimhigherwebdesign-amy/\" target=\"_blank\" class=\"social-link codepen\">\n\t\t\t\t\tCodepen\n\t\t\t\t</a>",
+				"selector": "html > body > footer > nav > a:nth-child(1)",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<a href=\"https://github.com/amykapernick/amygoestoperth\" target=\"_blank\" class=\"social-link github\"> Github </a>",
+				"selector": "html > body > footer > nav > a:nth-child(2)",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<a href=\"https://www.facebook.com/aimhigherwebdesign\" target=\"_blank\" class=\"social-link facebook\">\n\t\t\t\t\tFacebook\n\t\t\t\t</a>",
+				"selector": "html > body > footer > nav > a:nth-child(3)",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<a href=\"https://twitter.com/amys_kapers\" target=\"_blank\" class=\"social-link twitter\">\n\t\t\t\t\tTwitter\n\t\t\t\t</a>",
+				"selector": "html > body > footer > nav > a:nth-child(4)",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<a href=\"https://www.instagram.com/amys_kapers/\" target=\"_blank\" class=\"social-link instagram\">\n\t\t\t\t\tInstagram\n\t\t\t\t</a>",
+				"selector": "html > body > footer > nav > a:nth-child(5)",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<a href=\"https://aimhigherwebdesign.com.au\" target=\"_blank\" class=\"social-link website\">Website</a>",
+				"selector": "html > body > footer > nav > a:nth-child(6)",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			}
+		]
+	},
+	{
+		"documentTitle": "HTML and CSS Tricks",
+		"pageUrl": "http://localhost:65519/html-and-css-tricks",
+		"issues": [
+			{
+				"code": "WCAG2AAA.Principle3.Guideline3_1.3_1_1.H57.2",
+				"type": "error",
+				"typeCode": 1,
+				"message": "The html element should have a lang or xml:lang attribute which describes the language of the document.",
+				"context": "<html><head>\n\t\t<meta charset=\"utf-8\">...</html>",
+				"selector": "html",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<p class=\"site-title\">My Testing Blog</p>",
+				"selector": "html > body > header > a > p",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of 6.38:1. Recommendation:  change background to #0e0e0e.",
+				"context": "<code class=\"html language-html\">&lt;input type=\"radio\" id=\"quot...</code>",
+				"selector": "html > body > main > article > div > pre:nth-child(11) > code",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of 6.38:1. Recommendation:  change background to #0e0e0e.",
+				"context": "<code class=\"css language-css\">input[type=\"radio\"]:checked + l...</code>",
+				"selector": "html > body > main > article > div > pre:nth-child(16) > code",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of 6.38:1. Recommendation:  change background to #0e0e0e.",
+				"context": "<code class=\"css language-css\">body {\n    display: flex;\n    f...</code>",
+				"selector": "html > body > main > article > div > pre:nth-child(20) > code",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of 6.38:1. Recommendation:  change background to #0e0e0e.",
+				"context": "<code class=\"scss language-scss\">input {\n  display: none;\n}\n\nlab...</code>",
+				"selector": "html > body > main > article > div > pre:nth-child(24) > code",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<a href=\"https://codepen.io/aimhigherwebdesign-amy/\" target=\"_blank\" class=\"social-link codepen\">\n\t\t\t\t\tCodepen\n\t\t\t\t</a>",
+				"selector": "html > body > footer > nav > a:nth-child(1)",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<a href=\"https://github.com/amykapernick/amygoestoperth\" target=\"_blank\" class=\"social-link github\"> Github </a>",
+				"selector": "html > body > footer > nav > a:nth-child(2)",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<a href=\"https://www.facebook.com/aimhigherwebdesign\" target=\"_blank\" class=\"social-link facebook\">\n\t\t\t\t\tFacebook\n\t\t\t\t</a>",
+				"selector": "html > body > footer > nav > a:nth-child(3)",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<a href=\"https://twitter.com/amys_kapers\" target=\"_blank\" class=\"social-link twitter\">\n\t\t\t\t\tTwitter\n\t\t\t\t</a>",
+				"selector": "html > body > footer > nav > a:nth-child(4)",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<a href=\"https://www.instagram.com/amys_kapers/\" target=\"_blank\" class=\"social-link instagram\">\n\t\t\t\t\tInstagram\n\t\t\t\t</a>",
+				"selector": "html > body > footer > nav > a:nth-child(5)",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			},
+			{
+				"code": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
+				"type": "error",
+				"typeCode": 1,
+				"message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 7:1, but text in this element has a contrast ratio of NaN:1.",
+				"context": "<a href=\"https://aimhigherwebdesign.com.au\" target=\"_blank\" class=\"social-link website\">Website</a>",
+				"selector": "html > body > footer > nav > a:nth-child(6)",
+				"runner": "htmlcs",
+				"runnerExtras": {}
+			}
+		]
+	}
+]
