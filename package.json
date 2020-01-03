@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon -e js,html,css index.js"
+    "dev": "nodemon -e js,html,css index.js",
+    "sass": "sass --watch scss/main.scss:resources/css/main.css"
   },
   "keywords": [],
   "author": "Amy Kapernick <amy@aimhigherweb.design> (https://amyskapers.dev)",
@@ -16,6 +17,7 @@
     "date-fns": "^2.8.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "node-sass": "^4.13.0",
     "nodemon": "^2.0.2",
     "nunjucks": "^3.2.0",
     "showdown": "^1.9.1"

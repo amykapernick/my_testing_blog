@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'Quicksand';
+  src: url("../fonts/Quicksand-VariableFont_wght.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Crimson Pro';
+  font-style: normal;
+  src: url("../fonts/CrimsonPro-VariableFont_wght.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Crimson Pro';
+  font-style: italic;
+  src: url("../fonts/CrimsonPro-Italic-VariableFont_wght.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Lato-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/Lato-Italic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Lato-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/Lato-BoldItalic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/SourceCodePro-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Antiqua';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/InknutAntiqua-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Antiqua';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/InknutAntiqua-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Antiqua';
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/InknutAntiqua-Black.ttf") format("truetype"); }
+
+* {
+  box-sizing: border-box; }
+
+img {
+  max-width: 100%; }
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 5px; }
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 124, 187, 0.2); }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #007cbb; }
+
+/*# sourceMappingURL=data:application/json;base64,ewoJInZlcnNpb24iOiAzLAoJImZpbGUiOiAicmVzb3VyY2VzL3Njc3MvZ2xvYmFsLmNzcyIsCgkic291cmNlcyI6IFsKCQkicmVzb3VyY2VzL3Njc3MvZ2xvYmFsLnNjc3MiLAoJCSJyZXNvdXJjZXMvc2Nzcy92YXJpYWJsZXMuc2NzcyIKCV0sCgkibmFtZXMiOiBbXSwKCSJtYXBwaW5ncyI6ICJBQUNBLFVBQVU7RUFDVCxXQUFXLEVBQUUsV0FBVztFQUN4QixHQUFHLEVBQUUsK0NBQStDLENBQUMsa0JBQWtCOztBQUd4RSxVQUFVO0VBQ1QsV0FBVyxFQUFFLGFBQWE7RUFDMUIsVUFBVSxFQUFFLE1BQU07RUFDbEIsR0FBRyxFQUFFLGdEQUFnRCxDQUFDLGtCQUFrQjs7QUFHekUsVUFBVTtFQUNULFdBQVcsRUFBRSxhQUFhO0VBQzFCLFVBQVUsRUFBRSxNQUFNO0VBQ2xCLEdBQUcsRUFBRSx1REFBdUQsQ0FBQyxrQkFBa0I7O0FBR2hGLFVBQVU7RUFDVCxXQUFXLEVBQUUsTUFBTTtFQUNuQixVQUFVLEVBQUUsTUFBTTtFQUNsQixXQUFXLEVBQUUsR0FBRztFQUNoQixHQUFHLEVBQUUsZ0NBQWdDLENBQUMsa0JBQWtCOztBQUd6RCxVQUFVO0VBQ1QsV0FBVyxFQUFFLE1BQU07RUFDbkIsVUFBVSxFQUFFLE1BQU07RUFDbEIsV0FBVyxFQUFFLEdBQUc7RUFDaEIsR0FBRyxFQUFFLCtCQUErQixDQUFDLGtCQUFrQjs7QUFHeEQsVUFBVTtFQUNULFdBQVcsRUFBRSxNQUFNO0VBQ25CLFVBQVUsRUFBRSxNQUFNO0VBQ2xCLFdBQVcsRUFBRSxHQUFHO0VBQ2hCLEdBQUcsRUFBRSw2QkFBNkIsQ0FBQyxrQkFBa0I7O0FBR3RELFVBQVU7RUFDVCxXQUFXLEVBQUUsTUFBTTtFQUNuQixVQUFVLEVBQUUsTUFBTTtFQUNsQixXQUFXLEVBQUUsR0FBRztFQUNoQixHQUFHLEVBQUUsbUNBQW1DLENBQUMsa0JBQWtCOztBQUc1RCxVQUFVO0VBQ1QsV0FBVyxFQUFFLGlCQUFpQjtFQUM5QixVQUFVLEVBQUUsTUFBTTtFQUNsQixXQUFXLEVBQUUsR0FBRztFQUNoQixHQUFHLEVBQUUseUNBQXlDLENBQUMsa0JBQWtCOztBQUdsRSxVQUFVO0VBQ1QsV0FBVyxFQUFFLFNBQVM7RUFDdEIsVUFBVSxFQUFFLE1BQU07RUFDbEIsV0FBVyxFQUFFLEdBQUc7RUFDaEIsR0FBRyxFQUFFLHlDQUF5QyxDQUFDLGtCQUFrQjs7QUFHbEUsVUFBVTtFQUNULFdBQVcsRUFBRSxTQUFTO0VBQ3RCLFVBQVUsRUFBRSxNQUFNO0VBQ2xCLFdBQVcsRUFBRSxHQUFHO0VBQ2hCLEdBQUcsRUFBRSxzQ0FBc0MsQ0FBQyxrQkFBa0I7O0FBRy9ELFVBQVU7RUFDVCxXQUFXLEVBQUUsU0FBUztFQUN0QixVQUFVLEVBQUUsTUFBTTtFQUNsQixXQUFXLEVBQUUsR0FBRztFQUNoQixHQUFHLEVBQUUsdUNBQXVDLENBQUMsa0JBQWtCOztBQU1oRSxBQUFBLENBQUMsQ0FBQztFQUNELFVBQVUsRUFBRSxVQUFVLEdBQ3RCOztBQUVELEFBQUEsR0FBRyxDQUFDO0VBQ0gsU0FBUyxFQUFFLElBQUksR0FDZjs7QUFFRCxBQUFBLG1CQUFtQixDQUFDO0VBQ25CLGdCQUFnQixFQUFFLFdBQVc7RUFDN0IsS0FBSyxFQUFFLEdBQUcsR0FDVjs7QUFFRCxBQUFBLHlCQUF5QixDQUFDO0VBQ3pCLGdCQUFnQixFQ2pGVixzQkFBTyxHRHNGYjtFQU5ELEFBR0MseUJBSHdCLEFBR3ZCLE1BQU0sQ0FBQztJQUNQLGdCQUFnQixFQ3BGWCxPQUFPLEdEcUZaIgp9 */
