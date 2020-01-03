@@ -8,13 +8,15 @@
     "dev": "nodemon -e js,html,css index.js",
     "sass": "sass --watch scss/main.scss:resources/css/main.css",
     "test:pa11y": "node tests/pa11y.js",
-    "test:backstop": "cd tests && backstop test && cd .."
+    "test:backstop": "cd tests && backstop test && cd ..",
+    "test:cypress": "cypress open"
   },
   "author": "Amy Kapernick <amy@aimhigherweb.design> (https://amyskapers.dev)",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.19.0",
     "contentful": "^7.11.3",
+    "cypress": "^3.8.1",
     "date-fns": "^2.8.1",
     "dotenv": "^8.2.0",
     "eslint": "^6.8.0",
