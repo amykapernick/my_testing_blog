@@ -1,14 +1,14 @@
 {
   "name": "my_testing_blog",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sample blog to show front end testing",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon -e js,html,css index.js",
-    "sass": "sass --watch scss/main.scss:resources/css/main.css"
+    "sass": "sass --watch scss/main.scss:resources/css/main.css",
+    "test:pa11y": "node tests/pa11y.js"
   },
-  "keywords": [],
   "author": "Amy Kapernick <amy@aimhigherweb.design> (https://amyskapers.dev)",
   "license": "MIT",
   "dependencies": {
@@ -17,9 +17,12 @@
     "date-fns": "^2.8.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "file-system": "^2.2.2",
     "node-sass": "^4.13.0",
     "nodemon": "^2.0.2",
     "nunjucks": "^3.2.0",
+    "pa11y": "^5.3.0",
+    "puppeteer-core": "^2.0.0",
     "showdown": "^1.9.1"
   }
 }

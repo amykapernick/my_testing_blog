@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(express.static('resources'))
 
 app.get('/', async (req, res) => {
-	const posts = await client.getEntries().then(data => {
+	const posts = await client.getEntries({ content_type: 'post', order: '-fields.publish' }).then(data => {
 		let posts = data.items
 		posts.forEach(post => {
 			post.fields.body = converter.makeHtml(post.fields.body.substr(0, 150))
@@ -40,9 +40,15 @@ app.get('/', async (req, res) => {
 })
 
 app.get('/:post', async (req, res) => {
-	const post = await client.getEntries().then(data => {
-		data.items.some(item => {
-			if (item.fields.slug == req.params.post) {
+	const post = await client
+		.getEntries({
+			content_type: 'post',
+			'fields.slug': req.params.post,
+		})
+		.then(data => {
+			let item = data.items[0]
+
+			if (item) {
 				item.fields.body = converter.makeHtml(item.fields.body)
 				item.fields.date = format(new Date(item.fields.publish), 'dd MMM yy')
 
@@ -51,7 +57,6 @@ app.get('/:post', async (req, res) => {
 				})
 			}
 		})
-	})
 })
 
 app.listen(process.env.PORT || 3000, () => {

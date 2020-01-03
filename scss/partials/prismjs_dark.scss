@@ -1,6 +1,10 @@
 @import '../variables.scss';
 
-.gatsby-highlight {
+pre {
+}
+
+pre code {
+	display: block;
 	background: $black;
 	border: 2px solid $black;
 	border-radius: 0.3em;
@@ -9,11 +13,11 @@
 	position: relative;
 	overflow: auto;
 
-	&[data-language='bash'] {
+	&.language-bash {
 		padding: 0.5em 1em;
 	}
 
-	&[data-language] {
+	&[class] {
 		&:before {
 			background: $blue;
 			color: #fff;
@@ -35,19 +39,19 @@
 		}
 	}
 
-	&[data-language='html'] {
+	&.html {
 		&:before {
 			content: 'HTML';
 		}
 	}
 
-	&[data-language='css'] {
+	&.css {
 		&:before {
 			content: 'CSS';
 		}
 	}
 
-	&[data-language='scss'] {
+	&.scss {
 		&:before {
 			content: 'SCSS';
 		}

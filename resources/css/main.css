@@ -577,7 +577,8 @@ time.date {
   position: static;
 }
 
-.gatsby-highlight {
+pre code {
+  display: block;
   background: #191919;
   border: 2px solid #191919;
   border-radius: 0.3em;
@@ -586,10 +587,10 @@ time.date {
   position: relative;
   overflow: auto;
 }
-.gatsby-highlight[data-language=bash] {
+pre code.language-bash {
   padding: 0.5em 1em;
 }
-.gatsby-highlight[data-language]:before {
+pre code[class]:before {
   background: #007cbb;
   color: #fff;
   border-radius: 0 0 10px 10px;
@@ -598,24 +599,24 @@ time.date {
   top: 0;
   right: 20px;
 }
-.gatsby-highlight[data-language=text] {
+pre code[data-language=text] {
   background: #edf3f7;
   color: #191919;
 }
-.gatsby-highlight[data-language=text] pre,
-.gatsby-highlight[data-language=text] code {
+pre code[data-language=text] pre,
+pre code[data-language=text] code {
   color: inherit;
 }
-.gatsby-highlight[data-language=html]:before {
+pre code.html:before {
   content: "HTML";
 }
-.gatsby-highlight[data-language=css]:before {
+pre code.css:before {
   content: "CSS";
 }
-.gatsby-highlight[data-language=scss]:before {
+pre code.scss:before {
   content: "SCSS";
 }
-.gatsby-highlight[data-language=javascript]:before {
+pre code[data-language=javascript]:before {
   content: "JS";
 }
 
