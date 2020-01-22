@@ -1,0 +1,33 @@
+.social-icons {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	font-size: 3em;
+
+	svg {
+		height: 1em;
+		width: 1em;
+	}
+
+	a {
+		border: 2px solid transparent;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 1.5em;
+		padding: 0.25em;
+		width: 1.5em;
+
+		span {
+			position: absolute;
+			right: -200vw;
+		}
+
+		&:active,
+		&:hover,
+		&focus {
+			border-color: $blue;
+			background-color: transparent;
+		}
+	}
+}
