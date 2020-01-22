@@ -28,6 +28,7 @@ main {
 		img {
 			justify-self: center;
 			height: 100%;
+			margin: unset;
 			width: auto;
 			min-width: calc(100% + 20px);
 			grid-area: img;
