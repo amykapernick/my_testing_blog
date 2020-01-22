@@ -2,9 +2,9 @@
   "name": "my_testing_blog",
   "version": "1.0.0",
   "description": "Sample blog to show front end testing",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "start": "node index.js",
+    "start": "npx @11ty/eleventy --serve --port=$PORT",
     "dev": "nodemon -e js,html,css index.js",
     "sass": "sass --watch scss/main.scss:resources/css/main.css",
     "test:pa11y": "node tests/pa11y.js",
@@ -14,6 +14,8 @@
   "author": "Amy Kapernick <amy@aimhigherweb.design> (https://amyskapers.dev)",
   "license": "MIT",
   "dependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "axios": "^0.19.1",
     "body-parser": "^1.19.0",
     "contentful": "^7.11.3",
     "cypress": "^3.8.1",

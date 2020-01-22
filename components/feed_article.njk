@@ -1,0 +1,17 @@
+{% macro field(url, title, date, excerpt) %}
+<article>
+			<header>
+				<h2><a href="{{url}}">{{post.fields.title}}</a></h2>
+				<time class="date" datetime="21 Jan 2020">21 Jan 2020</time>
+			</header>
+			<div class="excerpt">Well Global Diversity CFP Day has wrapped up again for another year, and my head is still spinning with things I wish I'd remembered to share. So while it's all still fresh (and while I can continue to postpone my other work 😂), I thought I'd take the chance to write them down. Writing a Proposal Writing Your Proposal GDCFP Day have an excellent video with advice on writing a CFP  If you need…</div>
+			<div class="share-icons">
+				<a href="https://www.facebook.com/sharer/sharer.php?u={{url}}" target="_blank" class="facebook share-link fbc-has-badge fbc-UID_1">
+					<span>Share article to Facebook (opens in new tab)</span>
+				</a>
+				<a href="https://twitter.com/home?status=So%20%40amys_kapers%20wrote%20this%20really%20cool%20blog%20post,%20you%20should%20check%20it%20out!%20{{url}}" target="_blank" class="twitter share-link">
+					<span>Share article to Twitter (opens in new tab)</span>
+				</a>
+			</div>
+		</article>
+{% endmacro %}
