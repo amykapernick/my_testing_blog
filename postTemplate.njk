@@ -3,7 +3,8 @@ pagination:
     data: contentful.posts
     size: 1
     alias: post
-permalink: "{{ post.fields.slug | slug }}/"
+layout: partials/layout.njk
+permalink: "{{ post.fields.slug}}/"
 ---
 
 {{post.fields.title}}
