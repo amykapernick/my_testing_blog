@@ -18,6 +18,11 @@ header {
 	h1 {
 		font-size: 4em;
 		margin: 0;
+
+		a {
+			color: $black;
+			text-decoration: none;
+		}
 	}
 }
 
