@@ -4,12 +4,7 @@
   "description": "Sample blog to show front end testing",
   "main": "index.html",
   "scripts": {
-    "start": "npx @11ty/eleventy --serve --port=$PORT",
-    "dev": "nodemon -e js,html,css index.js",
-    "sass": "sass --watch scss/main.scss:resources/css/main.css",
-    "test:pa11y": "node tests/pa11y.js",
-    "test:backstop": "cd tests && backstop test && cd ..",
-    "test:cypress": "cypress open"
+    "start": "npx @11ty/eleventy --serve --port=$PORT"
   },
   "author": "Amy Kapernick <amy@aimhigherweb.design> (https://amyskapers.dev)",
   "license": "MIT",
@@ -17,23 +12,10 @@
     "@11ty/eleventy": "^0.10.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "contentful": "^7.11.3",
-    "cypress": "^3.8.1",
     "date-fns": "^2.8.1",
     "dotenv": "^8.2.0",
-    "eslint": "^6.8.0",
-    "eslint-config-cypress": "^0.28.0",
-    "eslint-config-standard": "^14.1.0",
-    "eslint-plugin-node": "^11.0.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1",
-    "file-system": "^2.2.2",
     "node-sass": "^4.13.1",
-    "pa11y": "^5.3.0",
     "path": "^0.12.7",
-    "prettier": "^1.19.1",
-    "puppeteer-core": "^2.0.0",
-    "showdown": "^1.9.1",
-    "stylelint": "^12.0.1",
-    "stylelint-config-recommended": "^3.0.0"
+    "showdown": "^1.9.1"
   }
 }
