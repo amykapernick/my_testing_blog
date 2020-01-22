@@ -9,7 +9,7 @@ title: 'My Testing Blog'
 				<h2><a href="{{post.fields.slug}}">{{post.fields.title}}</a></h2>
 				<time class="date" datetime="{{post.fields.dateUpdate}}">{{post.fields.dateUpdate}}</time>
 			</header>
-			<div class="excerpt">{{post.fields.body | striptags(true)}}...</div>
+			<div class="excerpt">{{post.fields.excerpt | striptags(true)}}...</div>
 			<div class="share-icons">
 				<a href="https://www.facebook.com/sharer/sharer.php?u={{contentful.siteUrl}}/{{post.fields.slug}}" target="_blank" class="facebook share-link fbc-has-badge fbc-UID_1">
 					<span>Share article to Facebook (opens in new tab)</span>

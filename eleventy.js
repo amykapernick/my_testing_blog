@@ -3,5 +3,8 @@ module.exports = eleventyConfig => {
 		dir: {
 			data: '_data',
 		},
+		templateFormats: ['njk', 'html'],
+		htmlTemplateEngine: 'njk',
+		dataTemplateEngine: 'njk',
 	}
 }
