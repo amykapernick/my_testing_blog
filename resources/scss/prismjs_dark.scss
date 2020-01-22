@@ -1,3 +1,5 @@
+/* stylelint-disable selector-combinator-blacklist, no-descending-specificity */
+
 pre code {
 	display: block;
 	background: $black;
@@ -15,7 +17,7 @@ pre code {
 	&[class] {
 		&:before {
 			background: $blue;
-			color: #fff;
+			color: #ffffff;
 			border-radius: 0 0 10px 10px;
 			padding: 5px 10px;
 			position: absolute;
@@ -63,7 +65,7 @@ pre,
 code {
 	color: $aqua;
 	font-size: 0.9em;
-	font-family: 'Source Code Pro', 'Anonymous Pro', monospace;
+	font-family: Source Code Pro, Anonymous Pro, monospace;
 	text-align: left;
 	line-height: 1.5;
 	tab-size: 4;
@@ -75,8 +77,7 @@ code {
 		overflow: initial;
 	}
 
-	&::selection,
-	&::mozselection {
+	&::selection {
 		background: #6ca7d8;
 	}
 
@@ -123,7 +124,7 @@ pre {
 		left: -3.8em;
 		width: 3em; /* works for line-numbers below 1000 lines */
 		letter-spacing: -1px;
-		border-right: 1px solid #999;
+		border-right: 1px solid #999999;
 
 		-webkit-user-select: none;
 		-moz-user-select: none;
@@ -137,7 +138,7 @@ pre {
 
 			&:before {
 				content: counter(linenumber);
-				color: #999;
+				color: #999999;
 				display: block;
 				padding-right: 0.8em;
 				text-align: right;
@@ -230,7 +231,7 @@ pre {
 }
 
 .command-line-prompt {
-	border-right: 1px solid #999;
+	border-right: 1px solid #999999;
 	display: block;
 	float: left;
 	font-size: 100%;
@@ -245,7 +246,7 @@ pre {
 
 	& > span {
 		&:before {
-			color: #999;
+			color: #999999;
 			content: ' ';
 			display: block;
 			padding-right: 0.8em;

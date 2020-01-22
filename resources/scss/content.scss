@@ -3,51 +3,6 @@ main {
 	margin: 20px auto;
 }
 
-.feed {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-	grid-auto-rows: 240px auto auto auto auto;
-	grid-gap: 20px;
-
-	article {
-		background: rgba($blue, 0.05);
-		border: 3px solid $blue;
-		grid-row: span 5;
-		display: grid;
-		grid-template-columns: 100%;
-		grid-template-rows: subgrid;
-		grid-template-areas: 'img' 'title' 'date' 'excerpt' 'icons';
-		overflow: hidden;
-		padding: 0 10px 10px;
-
-		h2 {
-			grid-area: title;
-			margin: 0;
-		}
-
-		img {
-			justify-self: center;
-			height: 100%;
-			width: auto;
-			min-width: calc(100% + 20px);
-			grid-area: img;
-		}
-
-		time {
-			grid-area: date;
-		}
-
-		.excerpt {
-			grid-area: excerpt;
-		}
-
-		.social-icons {
-			font-size: 2em;
-			grid-area: icons;
-		}
-	}
-}
-
 article {
 	header {
 		background: none;
@@ -81,5 +36,51 @@ article {
 		display: block;
 		margin: 0 auto;
 		max-width: 800px;
+	}
+}
+
+.feed {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	grid-auto-rows: 240px auto auto auto auto;
+	grid-gap: 20px;
+
+	article {
+		background: rgba($blue, 0.05);
+		border: 3px solid $blue;
+		grid-row: span 5;
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: subgrid;
+		grid-template-areas: 'img' 'title' 'date' 'excerpt' 'icons';
+		overflow: hidden;
+		padding: 0 10px 10px;
+
+		h2 {
+			grid-area: title;
+			margin: 0;
+		}
+
+		img {
+			justify-self: center;
+			height: 100%;
+			margin: unset;
+			width: auto;
+			min-width: calc(100% + 20px);
+			grid-area: img;
+		}
+
+		time {
+			grid-area: date;
+		}
+
+		.excerpt {
+			grid-area: excerpt;
+		}
+
+		.social-icons {
+			font-size: 2em;
+			grid-area: icons;
+		}
 	}
 }
