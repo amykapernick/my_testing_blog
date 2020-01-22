@@ -11,10 +11,8 @@ title: 'My Testing Blog'
 			</header>
 			<div class="excerpt">{{post.fields.excerpt | striptags(true)}}...</div>
 			<div class="share-icons">
-				<a href="https://www.facebook.com/sharer/sharer.php?u={{contentful.siteUrl}}/{{post.fields.slug}}" target="_blank" class="facebook share-link fbc-has-badge fbc-UID_1">
-					<span>Share article to Facebook (opens in new tab)</span>
-				</a>
 				<a href="https://twitter.com/home?status=So%20%40amys_kapers%20wrote%20this%20really%20cool%20blog%20post,%20you%20should%20check%20it%20out!%20{{contentful.siteUrl}}/{{post.fields.slug}}" target="_blank" class="twitter share-link">
+				{% include 'img/twitter.svg' %}
 					<span>Share article to Twitter (opens in new tab)</span>
 				</a>
 			</div>
