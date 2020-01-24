@@ -163,7 +163,7 @@
 			"//Define the browser settings at the start of your runTest function",
 			"const browser = await puppeteer.launch({",
 			"    ignoreHTTPSErrors: true,",
-			"    executablePath: '/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe',",
+			"    executablePath: '/c/Program Files (x86)/Google/Chrome/Application/chrome.exe',",
 			"    args: ['--no-sandbox'],",
 			"})"
 		],
@@ -178,7 +178,7 @@
 		],
 		"body": [
 			"{",
-			"    browser: browser",
+			"    browser: browser,",
 			"}"
 		],
 		"description": "pa11y-options-browser"
@@ -195,5 +195,62 @@
 			"})"
 		],
 		"description": "pa11y-save-results"
+	},
+	"pa11y-options": {
+		"prefix": [
+			"pa11y",
+			"options",
+			"screencap",
+			"a11y-standard"
+		],
+		"body": [
+			"",
+		  "	standard: 'WCAG2AAA',",
+		  "	screenCapture: `./tests/results/pa11y_home.png`,"
+		],
+		"description": "pa11y-options"
+	},
+	"pa11y-mobile-home": {
+		"prefix": "pa11y",
+		"body": [
+			"pa11y(`http://localhost:56284`, {",
+		  "			browser: browser,",
+		  "			standard: 'WCAG2AAA',",
+		  "			screenCapture: `./tests/results/pa11y_home_mobile.png`,",
+		  "			viewport: {",
+		  "				width: 320,",
+		  "				height: 480,",
+		  "				isMobile: true,",
+		  "			},",
+		  "		}),"
+		],
+		"description": "pa11y-mobile-home"
+	},
+	"pa11y-desktop-home": {
+		"prefix": "pa11y",
+		"body": [
+			"pa11y(`http://localhost:56284`, {",
+		  "			browser: browser,",
+		  "			standard: 'WCAG2AAA',",
+		  "			screenCapture: `./tests/results/pa11y_home_desktop.png`,",
+		  "			viewport: {",
+		  "				width: 1280,",
+		  "				height: 1024,",
+		  "			},",
+		  "		}),"
+		],
+		"description": "pa11y-desktop-home"
+	},
+	"backstop-puppeteer-browser": {
+		"prefix": [
+			"backstop",
+			"puppeteer",
+			"browser"
+		],
+		"body": [
+			"",
+			"    \"executablePath\": \"/c/Program Files (x86)/Google/Chrome/Application/chrome.exe\""
+		],
+		"description": "backstop-puppeteer-browser"
 	}
 }

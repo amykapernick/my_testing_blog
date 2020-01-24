@@ -6,7 +6,9 @@
   "scripts": {
     "start": "npx @11ty/eleventy --serve --port=$PORT",
     "test:eslint": "eslint --fix --output-file tests/eslint.json --format json .",
-    "test:pa11y": "node tests/pa11y.js"
+    "test:pa11y": "node tests/pa11y.js",
+    "test:backstop": "backstop test",
+    "teset:approve": "backstop approve"
   },
   "author": "Amy Kapernick <amy@aimhigherweb.design> (https://amyskapers.dev)",
   "license": "MIT",

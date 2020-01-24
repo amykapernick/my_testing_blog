@@ -12,8 +12,29 @@ const runTest = async () => {
 
 	const results = await Promise.all([
 		// Basic pa11y test with no options
+		pa11y(`http://localhost:56284/on-submitting-to-conferences/`, {
+			browser: browser, 
+				standard: 'WCAG2AAA',
+				screenCapture: `./tests/results/pa11y_post.png`,
+		}),
 		pa11y(`http://localhost:56284`, {
-			browser: browser
+			browser: browser,
+			standard: 'WCAG2AAA',
+			screenCapture: `./tests/results/pa11y_home_mobile.png`,
+			viewport: {
+				width: 320,
+				height: 480,
+				isMobile: true,
+			},
+		}),
+		pa11y(`http://localhost:56284`, {
+			browser: browser,
+			standard: 'WCAG2AAA',
+			screenCapture: `./tests/results/pa11y_home_desktop.png`,
+			viewport: {
+				width: 1280,
+				height: 1024,
+			},
 		}),
 	])
 
@@ -23,6 +44,7 @@ const runTest = async () => {
 	})
 
 	browser.close()
+
 }
 
 runTest()
