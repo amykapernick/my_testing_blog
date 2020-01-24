@@ -4,7 +4,9 @@
   "description": "Sample blog to show front end testing",
   "main": "index.html",
   "scripts": {
-    "start": "npx @11ty/eleventy --serve --port=$PORT"
+    "start": "npx @11ty/eleventy --serve --port=$PORT",
+    "test:eslint": "eslint --fix --output-file tests/eslint.json --format json .",
+    "test:pa11y": "node tests/pa11y.js"
   },
   "author": "Amy Kapernick <amy@aimhigherweb.design> (https://amyskapers.dev)",
   "license": "MIT",

@@ -129,5 +129,28 @@
 		  "	"
 		],
 		"description": "stylelint-rules"
+	},
+	// pa11y
+	"pa11y-test": {
+		"prefix": [
+			"pa11y",
+			"basic"
+		],
+		"body": [
+			"const pa11y = require('pa11y')",
+			"",
+			"const runTest = async () => {",
+			"    const results = await Promise.all([",
+			"        // Basic pa11y test with no options",
+			"        pa11y(`http://localhost:65519`),",
+			"    ])",
+			"",
+			"    // Display Results",
+			"    console.log(results)",
+			"}",
+			"",
+			"runTest()"
+		],
+		"description": "pa11y-test"
 	}
 }
