@@ -142,7 +142,7 @@
 			"const runTest = async () => {",
 			"    const results = await Promise.all([",
 			"        // Basic pa11y test with no options",
-			"        pa11y(`http://localhost:65519`),",
+			"        pa11y(`http://localhost:56284`),",
 			"    ])",
 			"",
 			"    // Display Results",

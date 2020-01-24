@@ -6,7 +6,7 @@ title: 'My Testing Blog'
 <article class="feed">
 	{% for post in contentful.posts %}
 		<article>
-			<img src="{{post.fields.featuredimage.fields.file.url}}"/>
+			<img src="{{post.fields.featuredImage.fields.file.url | safe}}"/>
 			<h2>
 				<a href="{{post.fields.slug}}">{{post.fields.title}}</a>
 			</h2>
