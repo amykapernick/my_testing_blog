@@ -1,7 +1,7 @@
 module.exports = {
-	extends: ["airbnb-base"],
+	extends: [ "airbnb-base" ],
 	plugins: [],
-	rules: {
+	rules: { 
 		'linebreak-style': 0,
 		'no-tabs': 0,
 		indent: ['error', 'tab', {
@@ -24,5 +24,4 @@ module.exports = {
 		'one-var': [2, 'consecutive'],
 		quotes: ['error', 'backtick'],
 		'no-param-reassign': ["error", { "props": false }]
-	}
 };
