@@ -152,5 +152,48 @@
 			"runTest()"
 		],
 		"description": "pa11y-test"
+	},
+	"puppeteer-browser": {
+		"prefix": [
+			"puppeteer",
+			"browser",
+			"pa11y"
+		],
+		"body": [
+			"//Define the browser settings at the start of your runTest function",
+			"const browser = await puppeteer.launch({",
+			"    ignoreHTTPSErrors: true,",
+			"    executablePath: '/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe',",
+			"    args: ['--no-sandbox'],",
+			"})"
+		],
+		"description": "puppeteer-browser"
+	},
+	"pa11y-options-browser": {
+		"prefix": [
+			"puppeteer",
+			"pa11y",
+			"options",
+			"browser"
+		],
+		"body": [
+			"{",
+			"    browser: browser",
+			"}"
+		],
+		"description": "pa11y-options-browser"
+	},
+	"pa11y-save-results": {
+		"prefix": [
+			"pa11y",
+			"save",
+			"results"
+		],
+		"body": [
+			"fs.writeFile('tests/results/pa11y.json', JSON.stringify(results), err => {",
+		  "	console.log(err)",
+			"})"
+		],
+		"description": "pa11y-save-results"
 	}
 }
