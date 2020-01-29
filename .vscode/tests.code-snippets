@@ -241,6 +241,7 @@
 		],
 		"description": "pa11y-desktop-home"
 	},
+	// Backstop
 	"backstop-puppeteer-browser": {
 		"prefix": [
 			"backstop",
@@ -252,5 +253,91 @@
 			"    \"executablePath\": \"/c/Program Files (x86)/Google/Chrome/Application/chrome.exe\""
 		],
 		"description": "backstop-puppeteer-browser"
+	},
+	"backstop-home": {
+		"prefix": [
+			"backstop",
+			"test",
+			"home"
+		],
+		"body": [
+			"{",
+			"      \"label\": \"My Testing Blog Homepage\",",
+			"      \"url\": \"http://localhost:56284\",",
+			"      \"cookiePath\": \"backstop_data/engine_scripts/cookies.json\",",
+			"      \"referenceUrl\": \"\",",
+			"      \"readyEvent\": \"\",",
+			"      \"readySelector\": \"\",",
+			"      \"delay\": 0,",
+			"      \"hideSelectors\": [],",
+			"      \"removeSelectors\": [],",
+			"      \"hoverSelector\": \"\",",
+			"      \"clickSelector\": \"\",",
+			"      \"postInteractionWait\": 0,",
+			"      \"selectors\": [],",
+			"      \"selectorExpansion\": true,",
+			"      \"expect\": 0,",
+			"      \"misMatchThreshold\": 0.1,",
+			"      \"requireSameDimensions\": true",
+			"    }"
+		],
+		"description": "backstop-home"
+	},
+	// Cypress
+	"cypress-home-tests": {
+		"prefix": [
+			"cypress",
+			"home",
+			"test"
+		],
+		"body": [
+			"describe('Blog Homepage', () => {",
+		  "	before(() => {",
+		  "		cy.visit('http://localhost:56284')",
+		  "	})",
+			"",
+		  "	it('Contains \"My Testing Blog\" in the title', () => {",
+		  "		cy.title().should('contain', 'My Testing Blog')",
+		  "	})",
+			"",
+		  "	it('Contains posts in blog feed', () => {",
+		  "		cy.get('.feed').find('article')",
+		  "	})",
+			"",
+		  "	it('All posts contain a title', () => {",
+		  "		cy.get('article').get('h2')",
+		  "	})",
+			"",
+		  "	it('Can access posts via article title', () => {",
+		  "		cy.get('article')",
+		  "			.first()",
+		  "			.find('a')",
+		  "			.click()",
+		  "	})",
+			"})"
+		],
+		"description": "cypress-home"
+	},
+	"cypress-mobile-tests": {
+		"prefix": [
+			"cypress",
+			"mobile",
+			"tests"
+		],
+		"body": [
+			"describe('Mobile Blog Post Template', () => {",
+		  "	before(() => {",
+		  "		cy.viewport('samsung-s10')",
+		  "		cy.visit('http://localhost:65519/html-and-css-tricks')",
+		  "	})",
+		  "	it('has visible post title', () => {",
+		  "		cy.get('h1').should('be.visible')",
+		  "	})",
+		  "	it('Can navigate back to home', () => {",
+		  "		cy.get('.site-title').click()",
+		  "	})",
+			"})"
+		],
+		"description": "cypress-mobile-tests"
 	}
 }

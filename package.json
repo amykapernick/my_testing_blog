@@ -8,7 +8,8 @@
     "test:eslint": "eslint --fix --output-file tests/eslint.json --format json .",
     "test:pa11y": "node tests/pa11y.js",
     "test:backstop": "backstop test",
-    "teset:approve": "backstop approve"
+    "test:approve": "backstop approve",
+    "test:cypress": "cypress open"
   },
   "author": "Amy Kapernick <amy@aimhigherweb.design> (https://amyskapers.dev)",
   "license": "MIT",
@@ -16,6 +17,7 @@
     "@11ty/eleventy": "^0.10.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "contentful": "^7.11.3",
+    "cypress": "^3.8.3",
     "date-fns": "^2.8.1",
     "dotenv": "^8.2.0",
     "node-sass": "^4.13.1",
