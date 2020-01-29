@@ -5,26 +5,32 @@
 			"eslint",
 			"template"
 		],
-		"body": [\"module.exports = {\",\r\n\t\t  \"\textends: [  ],\",\r\n\t\t  \"\tplugins: [  ],\",\r\n\t\t  \"\trules: {  }\",\r\n\t\t\t\"};\"],
-		"description": "eslint-template"
-		},
-		"eslint-extends": {
-			"prefix": [
-				"eslint",
-				"extends"
-			],
-			"body": [
-				"\"airbnb-base\""
-			],
-			"description": "eslint-extends"
-		},
-		"eslint-rules": {
-			"prefix": [
-				"eslint",
-				"rules"
-			],
-			"body": [
-				"",
+		"body": [
+			"module.exports = {",
+			"\textends: [  ],",
+			"\tplugins: [  ],",
+			"\trules: {  }",
+		};"
+	],
+	"description": "eslint-template"
+},
+"eslint-extends": {
+	"prefix": [
+		"eslint",
+		"extends"
+	],
+	"body": [
+		"\"airbnb-base\""
+	],
+	"description": "eslint-extends"
+},
+"eslint-rules": {
+	"prefix": [
+		"eslint",
+		"rules"
+	],
+	"body": [
+		"",
 		  "		'linebreak-style': 0,",
 		  "		'no-tabs': 0,",
 		  "		indent: ['error', 'tab', {",
@@ -47,32 +53,32 @@
 		  "		'one-var': [2, 'consecutive'],",
 		  "		quotes: ['error', 'backtick'],",
 		  "		'no-param-reassign': [\"error\", { \"props\": false }]",
-				""
-			],
-			"description": "eslint-rules"
-		},
-		"stylelint-template": {
-			"prefix": [
-				"stylelint",
-				"template"
-			],
-			"body": [
-				"{",
+		""
+	],
+	"description": "eslint-rules"
+},
+"stylelint-template": {
+	"prefix": [
+		"stylelint",
+		"template"
+	],
+	"body": [
+		"{",
 		  "	\"processors\": [  ],",
 		  "	\"extends\": [  ],",
 		  "	\"syntax\": \"\",",
 		  "	\"rules\": {  }",
-				"}"
-			],
-			"description": "stylelint-template"
-		},
-		"stylelint-rules": {
-			"prefix": [
-				"stylelint",
-				"rules"
-			],
-			"body": [
-				"",
+		"}"
+	],
+	"description": "stylelint-template"
+},
+"stylelint-rules": {
+	"prefix": [
+		"stylelint",
+		"rules"
+	],
+	"body": [
+		"",
 		  "		function-calc-no-invalid: true,",
 		  "		no-empty-first-line: true,",
 		  "		no-missing-end-of-source-newline: true,",
@@ -121,93 +127,93 @@
 		  "		string-no-newline: true,",
 		  "		function-calc-no-unspaced-operator: true,",
 		  "	"
-			],
-			"description": "stylelint-rules"
-		},
-		// pa11y
-		"pa11y-test": {
-			"prefix": [
-				"pa11y",
-				"basic"
-			],
-			"body": [
-				"const pa11y = require('pa11y')",
-				"",
-				"const runTest = async () => {",
-				"    const results = await Promise.all([",
-				"        // Basic pa11y test with no options",
-				"        pa11y(`http://localhost:56284`),",
-				"    ])",
-				"",
-				"    // Display Results",
-				"    console.log(results)",
-				"}",
-				"",
-				"runTest()"
-			],
-			"description": "pa11y-test"
-		},
-		"puppeteer-browser": {
-			"prefix": [
-				"puppeteer",
-				"browser",
-				"pa11y"
-			],
-			"body": [
-				"//Define the browser settings at the start of your runTest function",
-				"const browser = await puppeteer.launch({",
-				"    ignoreHTTPSErrors: true,",
-				"    executablePath: '/c/Program Files (x86)/Google/Chrome/Application/chrome.exe',",
-				"    args: ['--no-sandbox'],",
-				"})"
-			],
-			"description": "puppeteer-browser"
-		},
-		"pa11y-options-browser": {
-			"prefix": [
-				"puppeteer",
-				"pa11y",
-				"options",
-				"browser"
-			],
-			"body": [
-				"{",
-				"    browser: browser,",
-				"}"
-			],
-			"description": "pa11y-options-browser"
-		},
-		"pa11y-save-results": {
-			"prefix": [
-				"pa11y",
-				"save",
-				"results"
-			],
-			"body": [
-				"fs.writeFile('tests/results/pa11y.json', JSON.stringify(results), err => {",
+	],
+	"description": "stylelint-rules"
+},
+// pa11y
+"pa11y-test": {
+	"prefix": [
+		"pa11y",
+		"basic"
+	],
+	"body": [
+		"const pa11y = require('pa11y')",
+		"",
+		"const runTest = async () => {",
+		"    const results = await Promise.all([",
+		"        // Basic pa11y test with no options",
+		"        pa11y(`http://localhost:56284`),",
+		"    ])",
+		"",
+		"    // Display Results",
+		"    console.log(results)",
+		"}",
+		"",
+		"runTest()"
+	],
+	"description": "pa11y-test"
+},
+"puppeteer-browser": {
+	"prefix": [
+		"puppeteer",
+		"browser",
+		"pa11y"
+	],
+	"body": [
+		"//Define the browser settings at the start of your runTest function",
+		"const browser = await puppeteer.launch({",
+		"    ignoreHTTPSErrors: true,",
+		"    executablePath: '/c/Program Files (x86)/Google/Chrome/Application/chrome.exe',",
+		"    args: ['--no-sandbox'],",
+		"})"
+	],
+	"description": "puppeteer-browser"
+},
+"pa11y-options-browser": {
+	"prefix": [
+		"puppeteer",
+		"pa11y",
+		"options",
+		"browser"
+	],
+	"body": [
+		"{",
+		"    browser: browser,",
+		"}"
+	],
+	"description": "pa11y-options-browser"
+},
+"pa11y-save-results": {
+	"prefix": [
+		"pa11y",
+		"save",
+		"results"
+	],
+	"body": [
+		"fs.writeFile('tests/results/pa11y.json', JSON.stringify(results), err => {",
 		  "	console.log(err)",
-				"})"
-			],
-			"description": "pa11y-save-results"
-		},
-		"pa11y-options": {
-			"prefix": [
-				"pa11y",
-				"options",
-				"screencap",
-				"a11y-standard"
-			],
-			"body": [
-				"",
+		"})"
+	],
+	"description": "pa11y-save-results"
+},
+"pa11y-options": {
+	"prefix": [
+		"pa11y",
+		"options",
+		"screencap",
+		"a11y-standard"
+	],
+	"body": [
+		"",
 		  "	standard: 'WCAG2AAA',",
 		  "	screenCapture: `./tests/results/pa11y_home.png`,"
-			],
-			"description": "pa11y-options"
-		},
-		"pa11y-mobile-home": {
-			"prefix": "pa11y",
-			"body": [
-				"pa11y(`http://localhost:56284`, {",
+	],
+	"description": "pa11y-options"
+},
+"pa11y-mobile-home": {
+	"prefix": "pa11y",
+	"body": [
+		"pa11y(`http://localhost:56284`, {",
 		  "			browser: browser,",
 		  "			standard: 'WCAG2AAA',",
 		  "			screenCapture: `./tests/results/pa11y_home_mobile.png`,",
@@ -217,13 +223,13 @@
 		  "				isMobile: true,",
 		  "			},",
 		  "		}),"
-			],
-			"description": "pa11y-mobile-home"
-		},
-		"pa11y-desktop-home": {
-			"prefix": "pa11y",
-			"body": [
-				"pa11y(`http://localhost:56284`, {",
+	],
+	"description": "pa11y-mobile-home"
+},
+"pa11y-desktop-home": {
+	"prefix": "pa11y",
+	"body": [
+		"pa11y(`http://localhost:56284`, {",
 		  "			browser: browser,",
 		  "			standard: 'WCAG2AAA',",
 		  "			screenCapture: `./tests/results/pa11y_home_desktop.png`,",
@@ -232,94 +238,94 @@
 		  "				height: 1024,",
 		  "			},",
 		  "		}),"
-			],
-			"description": "pa11y-desktop-home"
-		},
-		// Backstop
-		"backstop-puppeteer-browser": {
-			"prefix": [
-				"backstop",
-				"puppeteer",
-				"browser"
-			],
-			"body": [
-				"",
-				"    \"executablePath\": \"/c/Program Files (x86)/Google/Chrome/Application/chrome.exe\""
-			],
-			"description": "backstop-puppeteer-browser"
-		},
-		"backstop-home": {
-			"prefix": [
-				"backstop",
-				"test",
-				"home"
-			],
-			"body": [
-				"{",
-				"      \"label\": \"My Testing Blog Homepage\",",
-				"      \"url\": \"http://localhost:56284\",",
-				"      \"cookiePath\": \"backstop_data/engine_scripts/cookies.json\",",
-				"      \"referenceUrl\": \"\",",
-				"      \"readyEvent\": \"\",",
-				"      \"readySelector\": \"\",",
-				"      \"delay\": 0,",
-				"      \"hideSelectors\": [],",
-				"      \"removeSelectors\": [],",
-				"      \"hoverSelector\": \"\",",
-				"      \"clickSelector\": \"\",",
-				"      \"postInteractionWait\": 0,",
-				"      \"selectors\": [],",
-				"      \"selectorExpansion\": true,",
-				"      \"expect\": 0,",
-				"      \"misMatchThreshold\": 0.1,",
-				"      \"requireSameDimensions\": true",
-				"    }"
-			],
-			"description": "backstop-home"
-		},
-		// Cypress
-		"cypress-home-tests": {
-			"prefix": [
-				"cypress",
-				"home",
-				"test"
-			],
-			"body": [
-				"describe('Blog Homepage', () => {",
+	],
+	"description": "pa11y-desktop-home"
+},
+// Backstop
+"backstop-puppeteer-browser": {
+	"prefix": [
+		"backstop",
+		"puppeteer",
+		"browser"
+	],
+	"body": [
+		"",
+		"    \"executablePath\": \"/c/Program Files (x86)/Google/Chrome/Application/chrome.exe\""
+	],
+	"description": "backstop-puppeteer-browser"
+},
+"backstop-home": {
+	"prefix": [
+		"backstop",
+		"test",
+		"home"
+	],
+	"body": [
+		"{",
+		"      \"label\": \"My Testing Blog Homepage\",",
+		"      \"url\": \"http://localhost:56284\",",
+		"      \"cookiePath\": \"backstop_data/engine_scripts/cookies.json\",",
+		"      \"referenceUrl\": \"\",",
+		"      \"readyEvent\": \"\",",
+		"      \"readySelector\": \"\",",
+		"      \"delay\": 0,",
+		"      \"hideSelectors\": [],",
+		"      \"removeSelectors\": [],",
+		"      \"hoverSelector\": \"\",",
+		"      \"clickSelector\": \"\",",
+		"      \"postInteractionWait\": 0,",
+		"      \"selectors\": [],",
+		"      \"selectorExpansion\": true,",
+		"      \"expect\": 0,",
+		"      \"misMatchThreshold\": 0.1,",
+		"      \"requireSameDimensions\": true",
+		"    }"
+	],
+	"description": "backstop-home"
+},
+// Cypress
+"cypress-home-tests": {
+	"prefix": [
+		"cypress",
+		"home",
+		"test"
+	],
+	"body": [
+		"describe('Blog Homepage', () => {",
 		  "	before(() => {",
 		  "		cy.visit('http://localhost:56284')",
 		  "	})",
-				"",
+		"",
 		  "	it('Contains \"My Testing Blog\" in the title', () => {",
 		  "		cy.title().should('contain', 'My Testing Blog')",
 		  "	})",
-				"",
+		"",
 		  "	it('Contains posts in blog feed', () => {",
 		  "		cy.get('.feed').find('article')",
 		  "	})",
-				"",
+		"",
 		  "	it('All posts contain a title', () => {",
 		  "		cy.get('article').get('h2')",
 		  "	})",
-				"",
+		"",
 		  "	it('Can access posts via article title', () => {",
 		  "		cy.get('article')",
 		  "			.first()",
 		  "			.find('a')",
 		  "			.click()",
 		  "	})",
-				"})"
-			],
-			"description": "cypress-home"
-		},
-		"cypress-mobile-tests": {
-			"prefix": [
-				"cypress",
-				"mobile",
-				"tests"
-			],
-			"body": [
-				"describe('Mobile Blog Post Template', () => {",
+		"})"
+	],
+	"description": "cypress-home"
+},
+"cypress-mobile-tests": {
+	"prefix": [
+		"cypress",
+		"mobile",
+		"tests"
+	],
+	"body": [
+		"describe('Mobile Blog Post Template', () => {",
 		  "	before(() => {",
 		  "		cy.viewport('samsung-s10')",
 		  "		cy.visit('http://localhost:65519/html-and-css-tricks')",
@@ -330,8 +336,8 @@
 		  "	it('Can navigate back to home', () => {",
 		  "		cy.get('.site-title').click()",
 		  "	})",
-				"})"
-			],
-			"description": "cypress-mobile-tests"
-		}
-	}
+		"})"
+	],
+	"description": "cypress-mobile-tests"
+}
+}
