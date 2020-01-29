@@ -7,9 +7,9 @@
 		],
 		"body": [
 			"module.exports = {",
-		  "	extends: [ $1 ],",
-		  "	plugins: [ $2 ],",
-		  "	rules: { $3 }",
+		  "	extends: [  ],",
+		  "	plugins: [  ],",
+		  "	rules: {  }",
 			"};"
 		],
 		"description": "eslint-template"
@@ -64,10 +64,10 @@
 		],
 		"body": [
 			"{",
-		  "	\"processors\": [ $1 ],",
-		  "	\"extends\": [ $2 ],",
-		  "	\"syntax\": \"$3\",",
-		  "	\"rules\": { $4 }",
+		  "	\"processors\": [  ],",
+		  "	\"extends\": [  ],",
+		  "	\"syntax\": \"\",",
+		  "	\"rules\": {  }",
 			"}"
 		],
 		"description": "stylelint-template"
