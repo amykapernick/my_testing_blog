@@ -309,9 +309,8 @@
 		  "	})",
 		"",
 		  "	it('Can access posts via article title', () => {",
-		  "		cy.get('article')",
+		  "		cy.get('article h2 a')",
 		  "			.first()",
-		  "			.find('a')",
 		  "			.click()",
 		  "	})",
 		"})"

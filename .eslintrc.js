@@ -1,6 +1,6 @@
 module.exports = {
 	extends: [ "airbnb-base" ],
-	plugins: [  ],
+	plugins: [ "cypress" ],
 	rules: { 
 			'linebreak-style': 0,
 			'no-tabs': 0,
