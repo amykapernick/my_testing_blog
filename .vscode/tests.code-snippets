@@ -142,7 +142,7 @@
 		"const runTest = async () => {",
 		"    const results = await Promise.all([",
 		"        // Basic pa11y test with no options",
-		"        pa11y(`http://localhost:56284`),",
+		"        pa11y(`http://localhost:63985`),",
 		"    ])",
 		"",
 		"    // Display Results",
@@ -213,7 +213,7 @@
 "pa11y-mobile-home": {
 	"prefix": "pa11y",
 	"body": [
-		"pa11y(`http://localhost:56284`, {",
+		"pa11y(`http://localhost:63985`, {",
 		  "			browser: browser,",
 		  "			standard: 'WCAG2AAA',",
 		  "			screenCapture: `./tests/results/pa11y_home_mobile.png`,",
@@ -229,7 +229,7 @@
 "pa11y-desktop-home": {
 	"prefix": "pa11y",
 	"body": [
-		"pa11y(`http://localhost:56284`, {",
+		"pa11y(`http://localhost:63985`, {",
 		  "			browser: browser,",
 		  "			standard: 'WCAG2AAA',",
 		  "			screenCapture: `./tests/results/pa11y_home_desktop.png`,",
@@ -263,7 +263,7 @@
 	"body": [
 		"{",
 		"      \"label\": \"My Testing Blog Homepage\",",
-		"      \"url\": \"http://localhost:56284\",",
+		"      \"url\": \"http://localhost:63985\",",
 		"      \"cookiePath\": \"backstop_data/engine_scripts/cookies.json\",",
 		"      \"referenceUrl\": \"\",",
 		"      \"readyEvent\": \"\",",
@@ -293,7 +293,7 @@
 	"body": [
 		"describe('Blog Homepage', () => {",
 		  "	before(() => {",
-		  "		cy.visit('http://localhost:56284')",
+		  "		cy.visit('http://localhost:63985')",
 		  "	})",
 		"",
 		  "	it('Contains \"My Testing Blog\" in the title', () => {",
@@ -309,9 +309,8 @@
 		  "	})",
 		"",
 		  "	it('Can access posts via article title', () => {",
-		  "		cy.get('article')",
+		  "		cy.get('article h2 a')",
 		  "			.first()",
-		  "			.find('a')",
 		  "			.click()",
 		  "	})",
 		"})"
@@ -328,7 +327,7 @@
 		"describe('Mobile Blog Post Template', () => {",
 		  "	before(() => {",
 		  "		cy.viewport('samsung-s10')",
-		  "		cy.visit('http://localhost:65519/html-and-css-tricks')",
+		  "		cy.visit('http://localhost:63985/html-and-css-tricks')",
 		  "	})",
 		  "	it('has visible post title', () => {",
 		  "		cy.get('h1').should('be.visible')",
