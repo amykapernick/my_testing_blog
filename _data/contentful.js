@@ -12,7 +12,7 @@ const client = contentful.createClient({
 
 module.exports = () => new Promise((res, rej) => {
 	client
-		.getEntries({ content_type: `post`, order: `-sys.updatedAt`, limit: 10 })
+		.getEntries({ content_type: `post`, order: `-sys.updatedAt`, limit: 5 })
 		.then((data) => {
 			const posts = data.items;
 			posts.forEach((post) => {
