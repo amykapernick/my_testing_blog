@@ -17,7 +17,6 @@
     "@11ty/eleventy": "^0.10.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "contentful": "^7.11.3",
-    "cypress": "^3.8.3",
     "date-fns": "^2.8.1",
     "dotenv": "^8.2.0",
     "eslint-plugin-cypress": "^2.8.1",
@@ -29,6 +28,7 @@
     "showdown": "^1.9.1"
   },
   "devDependencies": {
+    "cypress": "^4.3.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.20.0"

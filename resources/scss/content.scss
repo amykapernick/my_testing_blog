@@ -84,3 +84,38 @@ article {
 		}
 	}
 }
+
+form {
+	width: 90vw;
+	max-width: 400px;
+	margin: 0 auto;
+
+	legend {
+		font-size: 2em;
+		margin-bottom: 20px;
+	}
+
+	label {
+		display: block;
+		font-size: 1.2em;
+		margin-left: 10px;
+	}
+
+	input, textarea {
+		border: 2px solid $blue;
+		font-size: 1.1em;
+		margin: 20px 0;
+		padding: 10px 20px;
+		width: 100%;
+	}
+
+	button {
+		display: block;
+		border: 2px solid $blue;
+		background: $blue;
+		color: #ffffff;
+		font-size: 1.2em;
+		padding: 10px 25px;
+		margin: 0 auto;
+	}
+}
