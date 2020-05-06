@@ -1,6 +1,8 @@
 const pa11y = require(`pa11y`),
 	puppeteer = require(`puppeteer-core`),
-	fs = require(`file-system`);
+	fs = require(`file-system`),
+	port = 50270,
+	site = `http://localhost:${port}`;
 
 const runTest = async () => {
 	// Define the browser settings at the start of your runTest function
@@ -11,12 +13,12 @@ const runTest = async () => {
 		}),
 		results = await Promise.all([
 		// Basic pa11y test with no options
-			pa11y(`http://localhost:63985/on-submitting-to-conferences/`, {
+			pa11y(`${site}/building-quokka-on-demand/`, {
 				browser,
 				standard: `WCAG2AAA`,
 				screenCapture: `./tests/results/pa11y_post.png`,
 			}),
-			pa11y(`http://localhost:63985`, {
+			pa11y(site, {
 				browser,
 				standard: `WCAG2AAA`,
 				screenCapture: `./tests/results/pa11y_home_mobile.png`,
@@ -26,7 +28,7 @@ const runTest = async () => {
 					isMobile: true,
 				},
 			}),
-			pa11y(`http://localhost:63985`, {
+			pa11y(site, {
 				browser,
 				standard: `WCAG2AAA`,
 				screenCapture: `./tests/results/pa11y_home_desktop.png`,
