@@ -9,7 +9,7 @@
     "test:pa11y": "node tests/pa11y.js",
     "test:backstop": "backstop test",
     "test:approve": "backstop approve",
-    "test:cypress": "cypress open"
+    "test": "cypress open"
   },
   "author": "Amy Kapernick <amy@aimhigherweb.design> (https://amyskapers.dev)",
   "license": "MIT",
