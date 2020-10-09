@@ -1,0 +1,155 @@
+[
+	{
+		"filePath": "/home/amy/training/my_testing_blog/.eslintrc.js",
+		"messages": [
+			{
+				"ruleId": "no-mixed-spaces-and-tabs",
+				"severity": 2,
+				"message": "Mixed spaces and tabs.",
+				"line": 27,
+				"column": 1,
+				"nodeType": "Program",
+				"messageId": "mixedSpacesAndTabs",
+				"endLine": 27,
+				"endColumn": 3
+			}
+		],
+		"errorCount": 1,
+		"warningCount": 0,
+		"fixableErrorCount": 0,
+		"fixableWarningCount": 0,
+		"output": "module.exports = {\n\textends: [`airbnb-base`],\n\tplugins: [],\n\trules: {\n\t\t'linebreak-style': 0,\n\t\t'no-tabs': 0,\n\t\tindent: [`error`, `tab`, {\n\t\t\tSwitchCase: 1,\n\t\t\tVariableDeclarator: 1\n\t\t}],\n\t\t'arrow-spacing': [`error`, { before: true, after: true }],\n\t\t'comma-dangle': [\n\t\t\t`error`,\n\t\t\t{\n\t\t\t\tobjects: `only-multiline`,\n\t\t\t\tarrays: `only-multiline`,\n\t\t\t\timports: `never`,\n\t\t\t\texports: `never`,\n\t\t\t\tfunctions: `never`,\n\t\t\t},\n\t\t],\n\t\t'no-var': `error`,\n\t\t'no-unused-vars': 1,\n\t\t'one-var': [2, `consecutive`],\n\t\tquotes: [`error`, `backtick`],\n\t\t'no-param-reassign': [`error`, { props: false }]\n\t }\n};\n",
+		"usedDeprecatedRules": [
+			{
+				"ruleId": "lines-around-directive",
+				"replacedBy": [
+					"padding-line-between-statements"
+				]
+			},
+			{
+				"ruleId": "no-spaced-func",
+				"replacedBy": [
+					"func-call-spacing"
+				]
+			},
+			{
+				"ruleId": "global-require",
+				"replacedBy": []
+			},
+			{
+				"ruleId": "no-buffer-constructor",
+				"replacedBy": []
+			},
+			{
+				"ruleId": "no-new-require",
+				"replacedBy": []
+			},
+			{
+				"ruleId": "no-path-concat",
+				"replacedBy": []
+			}
+		]
+	},
+	{
+		"filePath": "/home/amy/training/my_testing_blog/_data/css.js",
+		"messages": [
+			{
+				"ruleId": "no-console",
+				"severity": 1,
+				"message": "Unexpected console statement.",
+				"line": 10,
+				"column": 3,
+				"nodeType": "MemberExpression",
+				"messageId": "unexpected",
+				"endLine": 10,
+				"endColumn": 14
+			}
+		],
+		"errorCount": 0,
+		"warningCount": 1,
+		"fixableErrorCount": 0,
+		"fixableWarningCount": 0,
+		"source": "const sass = require(`node-sass`),\r\n\tpath = require(`path`);\r\n\r\nmodule.exports = () => {\r\n\tconst result = sass.renderSync({\r\n\t\tfile: path.join(__dirname, `../resources/scss/main.scss`),\r\n\t});\r\n\r\n\tif (!result.css) {\r\n\t\tconsole.log(`Error compiling stylesheet`);\r\n\t\treturn `/* Error compiling styleesheet */`;\r\n\t}\r\n\r\n\treturn result.css.toString();\r\n};\r\n",
+		"usedDeprecatedRules": [
+			{
+				"ruleId": "lines-around-directive",
+				"replacedBy": [
+					"padding-line-between-statements"
+				]
+			},
+			{
+				"ruleId": "no-spaced-func",
+				"replacedBy": [
+					"func-call-spacing"
+				]
+			},
+			{
+				"ruleId": "global-require",
+				"replacedBy": []
+			},
+			{
+				"ruleId": "no-buffer-constructor",
+				"replacedBy": []
+			},
+			{
+				"ruleId": "no-new-require",
+				"replacedBy": []
+			},
+			{
+				"ruleId": "no-path-concat",
+				"replacedBy": []
+			}
+		]
+	},
+	{
+		"filePath": "/home/amy/training/my_testing_blog/_site/.eslintrc.js",
+		"messages": [
+			{
+				"ruleId": "no-mixed-spaces-and-tabs",
+				"severity": 2,
+				"message": "Mixed spaces and tabs.",
+				"line": 27,
+				"column": 1,
+				"nodeType": "Program",
+				"messageId": "mixedSpacesAndTabs",
+				"endLine": 27,
+				"endColumn": 3
+			}
+		],
+		"errorCount": 1,
+		"warningCount": 0,
+		"fixableErrorCount": 0,
+		"fixableWarningCount": 0,
+		"output": "module.exports = {\n\textends: [`airbnb-base`],\n\tplugins: [],\n\trules: {\n\t\t'linebreak-style': 0,\n\t\t'no-tabs': 0,\n\t\tindent: [`error`, `tab`, {\n\t\t\tSwitchCase: 1,\n\t\t\tVariableDeclarator: 1\n\t\t}],\n\t\t'arrow-spacing': [`error`, { before: true, after: true }],\n\t\t'comma-dangle': [\n\t\t\t`error`,\n\t\t\t{\n\t\t\t\tobjects: `only-multiline`,\n\t\t\t\tarrays: `only-multiline`,\n\t\t\t\timports: `never`,\n\t\t\t\texports: `never`,\n\t\t\t\tfunctions: `never`,\n\t\t\t},\n\t\t],\n\t\t'no-var': `error`,\n\t\t'no-unused-vars': 1,\n\t\t'one-var': [2, `consecutive`],\n\t\tquotes: [`error`, `backtick`],\n\t\t'no-param-reassign': [`error`, { props: false }]\n\t }\n};\n",
+		"usedDeprecatedRules": [
+			{
+				"ruleId": "lines-around-directive",
+				"replacedBy": [
+					"padding-line-between-statements"
+				]
+			},
+			{
+				"ruleId": "no-spaced-func",
+				"replacedBy": [
+					"func-call-spacing"
+				]
+			},
+			{
+				"ruleId": "global-require",
+				"replacedBy": []
+			},
+			{
+				"ruleId": "no-buffer-constructor",
+				"replacedBy": []
+			},
+			{
+				"ruleId": "no-new-require",
+				"replacedBy": []
+			},
+			{
+				"ruleId": "no-path-concat",
+				"replacedBy": []
+			}
+		]
+	}
+]
