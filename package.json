@@ -4,7 +4,8 @@
   "description": "Sample blog to show front end testing",
   "main": "index.html",
   "scripts": {
-    "start": "npx @11ty/eleventy --serve --port=$PORT",
+    "start": "eleventy --serve --port=$PORT",
+    "build": "eleventy build",
     "test:eslint": "eslint --fix --output-file tests/eslint.json --format json .",
     "test:pa11y": "node tests/pa11y.js",
     "test:backstop": "backstop test",
