@@ -1,0 +1,58 @@
+{
+  "testSuite": "BackstopJS",
+  "tests": [
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\backstop_default_My_Testing_Blog_Homepage_0_document_0_phone.png",
+        "test": "..\\bitmaps_test\\20201009-194301\\backstop_default_My_Testing_Blog_Homepage_0_document_0_phone.png",
+        "selector": "document",
+        "fileName": "backstop_default_My_Testing_Blog_Homepage_0_document_0_phone.png",
+        "label": "My Testing Blog Homepage",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "http://localhost:8080",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "phone",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.13",
+          "analysisTime": 162
+        },
+        "diffImage": "..\\bitmaps_test\\20201009-194301\\failed_diff_backstop_default_My_Testing_Blog_Homepage_0_document_0_phone.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\backstop_default_My_Testing_Blog_Homepage_0_document_1_tablet.png",
+        "test": "..\\bitmaps_test\\20201009-194301\\backstop_default_My_Testing_Blog_Homepage_0_document_1_tablet.png",
+        "selector": "document",
+        "fileName": "backstop_default_My_Testing_Blog_Homepage_0_document_1_tablet.png",
+        "label": "My Testing Blog Homepage",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.1,
+        "url": "http://localhost:8080",
+        "referenceUrl": "",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.63",
+          "analysisTime": 355
+        },
+        "diffImage": "..\\bitmaps_test\\20201009-194301\\failed_diff_backstop_default_My_Testing_Blog_Homepage_0_document_1_tablet.png"
+      },
+      "status": "fail"
+    }
+  ],
+  "id": "backstop_default"
+}
