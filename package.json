@@ -2,7 +2,7 @@
   "name": "my_testing_blog",
   "version": "1.0.0",
   "description": "Sample blog to show front end testing",
-  "main": "index.html",
+  "main": "index.njk",
   "scripts": {
     "start": "eleventy --serve --port=$PORT",
     "build": "eleventy build",
@@ -10,9 +10,9 @@
     "test:pa11y": "node tests/pa11y.js",
     "test:backstop": "backstop test",
     "test:approve": "backstop approve",
-    "test": "cypress open"
+    "test:cy": "cypress open"
   },
-  "author": "Amy Kapernick <amy@aimhigherweb.design> (https://amyskapers.dev)",
+  "author": "Amy Kapernick <amy@kapers.dev> (https://amyskapers.dev)",
   "license": "MIT",
   "dependencies": {
     "@11ty/eleventy": "^0.11.0",
