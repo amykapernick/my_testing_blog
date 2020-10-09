@@ -9,22 +9,27 @@ article {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		margin-bottom: 50px;
+		height: auto;
 
 		&:after {
-			background: $blue;
-			border-radius: 50%;
+			background: url('/img/separator.svg');
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
 			content: '';
 			display: block;
 			justify-self: center;
 			grid-column: 1 / -1;
-			height: 10px;
-			width: 10px;
+			height: 30px;
+			width: 100%;
 		}
 
 		h1 {
 			font-size: 3em;
 			grid-column: 1 / -1;
 			text-align: center;
+			position: static;
+			margin-top: 0;
 		}
 
 		.social-icons {
@@ -42,31 +47,40 @@ article {
 .feed {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-	grid-auto-rows: 240px auto auto auto auto;
 	grid-gap: 20px;
 
 	article {
-		background: rgba($blue, 0.05);
-		border: 3px solid $blue;
+		--article_colour: #{$blue};
+
+		background: $background;
+		border: 3px solid var(--article_colour);
 		grid-row: span 5;
 		display: grid;
 		grid-template-columns: 100%;
-		grid-template-rows: subgrid;
 		grid-template-areas: 'img' 'title' 'date' 'excerpt' 'icons';
 		overflow: hidden;
 		padding: 0 10px 10px;
 
 		h2 {
 			grid-area: title;
-			margin: 0;
+
+			a {
+				color: var(--article_colour);
+
+				&:hover, &:focus {
+					color: $black;
+					background: var(--article_colour);
+				}
+			}
 		}
 
 		img {
 			justify-self: center;
-			height: 100%;
+			height: 250px;
 			margin: unset;
-			width: auto;
-			min-width: calc(100% + 20px);
+			width: calc(100% + 20px);
+			object-fit: cover;
+			object-position: top center;
 			grid-area: img;
 		}
 
@@ -81,6 +95,34 @@ article {
 		.social-icons {
 			font-size: 2em;
 			grid-area: icons;
+		}
+
+		&:nth-child(9n - 7) {
+			--article_colour: #{$green};
+		}
+
+		&:nth-child(9n - 6) {
+			--article_colour: #{$orange};
+		}
+
+		&:nth-child(9n - 5) {
+			--article_colour: #{$purple};
+		}
+
+		&:nth-child(9n - 4) {
+			--article_colour: #{$red};
+		}
+
+		&:nth-child(9n - 3) {
+			--article_colour: #{$purple};
+		}
+
+		&:nth-child(9n - 2) {
+			--article_colour: #{$pink};
+		}
+
+		&:nth-child(9n - 1) {
+			--article_colour: #{$navy};
 		}
 	}
 }

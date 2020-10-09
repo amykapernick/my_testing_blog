@@ -1,18 +1,17 @@
-//Variables
-$black: #191919;
-$grey: #d1d1d1;
-$grey_dark: #36454f;
-$white: #edf3f7;
-$blue: #007cbb;
-$blue_light: #80bedd;
-$aqua: #00acbb;
-$aqua_light: #80d6dd;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Source+Code+Pro:ital@0;1&display=swap');
 
-// Import Fonts
-@font-face {
-	font-family: Recursive;
-	src: url('/fonts/recursive-MONO_CASL_wght_slnt_ital--full_gsub--2019_12_21-21_07.ttf') format('truetype');
-}
+//Variables
+$blue: #318ce7;
+$green: #64ad66;
+$orange: #f78d2b;
+$red: #e53f51;
+$yellow: #ffce03;
+$purple: #7561c1;
+$purple_bright: #9440a0;
+$pink: #cb5699;
+$navy: #364c93;
+$background: #f7f0eb;
+$black: #000000;
 
 @import './global.scss';
 @import './header.scss';

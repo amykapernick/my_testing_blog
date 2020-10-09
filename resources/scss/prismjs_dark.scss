@@ -27,7 +27,7 @@ pre code {
 	}
 
 	&[data-language='text'] {
-		background: $white;
+		background: $background;
 		color: $black;
 
 		pre,
@@ -63,9 +63,8 @@ pre code {
 
 pre,
 code {
-	color: $aqua;
+	color: $green;
 	font-size: 0.9em;
-	font-family: Source Code Pro, Anonymous Pro, monospace;
 	text-align: left;
 	line-height: 1.5;
 	tab-size: 4;
@@ -89,9 +88,9 @@ code {
 
 :not(pre) {
 	& > code {
-		background: $aqua_light;
+		background: $black;
 		border-radius: 0.3em;
-		color: $black;
+		color: $purple_bright;
 		font-size: 0.8em;
 		padding: 0.1em 0.3em;
 	}
@@ -184,7 +183,7 @@ pre {
 	&.constant,
 	&.symbol,
 	&.deleted {
-		color: #990055;
+		color: $blue;
 	}
 
 	&.selector,
@@ -193,29 +192,29 @@ pre {
 	&.char,
 	&.builtin,
 	&.inserted {
-		color: #669900;
+		color: $pink;
 	}
 
 	&.operator,
 	&.entity,
 	&.url {
-		color: #a67f59;
+		color: $yellow;
 	}
 
 	&.atrule,
 	&.attr-value,
 	&.keyword {
-		color: #1c75bc;
+		color: $orange;
 	}
 
 	&.function {
-		color: #dd4a68;
+		color: $purple_bright;
 	}
 
 	&.regex,
 	&.important,
 	&.variable {
-		color: #ee9900;
+		color: $orange;
 	}
 
 	&.entity {
@@ -226,7 +225,7 @@ pre {
 .language-css,
 .style {
 	&.string {
-		color: #a67f59;
+		color: $yellow;
 	}
 }
 

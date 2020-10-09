@@ -1,0 +1,26 @@
+---
+permalink: "{% slug title %}/"
+---
+{% set pagetitle = title %}
+{% extends 'partials/layout.njk' %}
+
+{% block content %}
+
+	<main class="main">
+		<article class="article-content article content">
+			<header>
+				<h1>{{title}}</h1>
+				<p class="article-intro">
+					{% if publish %}
+						Published <time class="date" datetime="{{publish}}">{{publish | shortDate}}</time>, Updated
+					{% endif %}
+					<time class="date" datetime="{{page.date}}">{{page.date | shortDate}}</time>
+				</p>
+			</header>
+			<div>
+				{{content | safe}}
+			</div>
+		</article>
+	</main>
+
+{% endblock %}

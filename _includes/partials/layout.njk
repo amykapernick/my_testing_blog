@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
     <title>My Testing Blog</title>
 
     <link rel="stylesheet" href="/css/main.css"/>
   </head>
   <body>
     {% include 'partials/header.njk' %}
-    <main>{{content | safe}}</main>
+    <main>
+      {% block content %}{% endblock %}
+    </main>
     {% include 'partials/footer.njk' %}
   </body>
 </html>
