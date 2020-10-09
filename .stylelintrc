@@ -1,7 +1,7 @@
 {
 	"processors": [  ],
 	"extends": [  ],
-	"syntax": "scss",
+	"syntax": "",
 	"rules": { 
 			function-calc-no-invalid: true,
 			no-empty-first-line: true,
